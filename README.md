@@ -1,1 +1,1 @@
-# BogdanNych.gethub.io
+# BogdanNych.github.io

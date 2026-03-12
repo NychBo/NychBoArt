@@ -11,7 +11,18 @@ text-align:center;
 scroll-behavior:smooth;
 
 }
+.about{
 
+max-width:700px;
+margin:auto;
+
+padding:40px 20px;
+
+line-height:1.8;
+
+font-size:18px;
+
+}
 
 
 .hero{
@@ -75,20 +86,6 @@ font-family:"Cinzel",serif;
 }
 
 
-
-.about{
-
-max-width:700px;
-
-margin:auto;
-
-padding:40px 20px;
-
-line-height:1.8;
-
-font-size:18px;
-
-}
 
 
 

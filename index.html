@@ -16,12 +16,18 @@
 
 <body>
 
-<header>
+<section class="hero">
+
+<div class="hero-content">
 
 <h1>Bohdan Nychyporuk</h1>
 
-<p class="subtitle" data-ua="Художник • Україна" data-en="Artist • Ukraine">
+<p class="hero-subtitle"
+data-ua="Художник • Україна"
+data-en="Artist • Ukraine">
+
 Художник • Україна
+
 </p>
 
 <div class="lang">
@@ -31,7 +37,17 @@
 
 </div>
 
-</header>
+<a href="#portfolio" class="hero-btn"
+data-ua="Переглянути роботи"
+data-en="View Portfolio">
+
+Переглянути роботи
+
+</a>
+
+</div>
+
+</section>
 
 
 <section class="about">
@@ -42,14 +58,14 @@ data-ua="Я художник з України. Працюю з олійними
 data-en="I am an artist from Ukraine. I work with oil paints, acrylic, graphite and colored pencils. My art is dedicated to nature, animals and especially big cats such as lions and tigers. I also create landscapes and animal portraits. In my work I try to capture the character of the animal, the power of nature and the atmosphere of the moment."
 >
 
-Я художник з України. Працюю з олійними фарбами, акрилом, графітом та кольоровими олівцями. Моє мистецтво присвячене природі, тваринам і особливо великим котам — левам та тиграм. Також я створюю пейзажі та портрети тварин. У своїх роботах я намагаюся передати характер тварини, силу природи та атмосферу моменту.
+Я художник з України. Працюю з олійними фарбами, акрилом, графітом та кольоровими олівцями. Моє мистецтво присвячене природі, тваринам і особливо великим котам — левам та тиграм.
 
 </p>
 
 </section>
 
 
-<section>
+<section id="portfolio">
 
 <h2 data-ua="Великі коти" data-en="Big Cats">Великі коти</h2>
 
@@ -67,10 +83,6 @@ data-en="I am an artist from Ukraine. I work with oil paints, acrylic, graphite 
 
 </div>
 
-</section>
-
-
-<section>
 
 <h2 data-ua="Інші роботи" data-en="Other Art">Інші роботи</h2>
 
@@ -139,17 +151,26 @@ Facebook
 </section>
 
 
-<div id="viewer" onclick="closeImage()">
+<div id="viewer">
+
+<span class="close" onclick="closeImage()">✕</span>
+
 <img id="viewer-img">
+
+<div class="nav">
+
+<button onclick="prevImage()">❮</button>
+<button onclick="nextImage()">❯</button>
+
 </div>
 
+</div>
 
 <footer>
 
 <p>© Bohdan Nychyporuk Art</p>
 
 </footer>
-
 
 <script src="script.js"></script>
 

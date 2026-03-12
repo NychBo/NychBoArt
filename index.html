@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
 </head>
 
@@ -22,27 +22,29 @@
 
 <h1>Bohdan Nychyporuk</h1>
 
-<p class="hero-subtitle"
+<p class="subtitle"
 data-ua="Художник • Україна"
 data-en="Artist • Ukraine">
-
 Художник • Україна
-
 </p>
 
 <div class="lang">
 
-<button onclick="setLang('ua')">UA</button>
-<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('ua')" class="lang-btn">UA</button>
+<button onclick="setLang('en')" class="lang-btn">EN</button>
 
 </div>
 
 <a href="#portfolio" class="hero-btn"
 data-ua="Переглянути роботи"
 data-en="View Portfolio">
-
 Переглянути роботи
+</a>
 
+<a href="#contact" class="hero-btn contact-btn"
+data-ua="Контакти"
+data-en="Contact">
+Контакти
 </a>
 
 </div>
@@ -53,12 +55,11 @@ data-en="View Portfolio">
 <section class="about">
 
 <p
-data-ua="Я художник з України. Працюю з олійними фарбами, акрилом, графітом та кольоровими олівцями. Моє мистецтво присвячене природі, тваринам і особливо великим котам — левам та тиграм. Також я створюю пейзажі та портрети тварин. У своїх роботах я намагаюся передати характер тварини, силу природи та атмосферу моменту."
+data-ua="Я художник з України. Працюю з олійними фарбами, акрилом, графітом та кольоровими олівцями. Моє мистецтво присвячене природі, тваринам та особливо великим котам — левам і тиграм. У своїх роботах я прагну передати характер тварини, атмосферу природи та емоції моменту."
 
-data-en="I am an artist from Ukraine. I work with oil paints, acrylic, graphite and colored pencils. My art is dedicated to nature, animals and especially big cats such as lions and tigers. I also create landscapes and animal portraits. In my work I try to capture the character of the animal, the power of nature and the atmosphere of the moment."
->
+data-en="I am an artist from Ukraine. I work with oil paints, acrylic, graphite and colored pencils. My art is dedicated to nature, animals and especially big cats such as lions and tigers. In my artworks I try to capture the character of the animal, the atmosphere of nature and the emotion of the moment.">
 
-Я художник з України. Працюю з олійними фарбами, акрилом, графітом та кольоровими олівцями. Моє мистецтво присвячене природі, тваринам і особливо великим котам — левам та тиграм.
+Я художник з України. Працюю з олійними фарбами, акрилом, графітом та кольоровими олівцями.
 
 </p>
 
@@ -76,10 +77,6 @@ data-en="I am an artist from Ukraine. I work with oil paints, acrylic, graphite 
 <img src="Images/images/bigcats/IMG_20210905_093747.jpg" onclick="openImage(this)">
 <img src="Images/images/bigcats/IMG_20221224_165649.jpg" onclick="openImage(this)">
 <img src="Images/images/bigcats/IMG_20240207_101359.jpg" onclick="openImage(this)">
-<img src="Images/images/bigcats/IMG_20231220_155106.jpg" onclick="openImage(this)">
-<img src="Images/images/bigcats/IMG_20240725_221050.jpg" onclick="openImage(this)">
-<img src="Images/images/bigcats/IMG_20250814_160058.jpg" onclick="openImage(this)">
-<img src="Images/images/bigcats/IMG_20250903_215322.jpg" onclick="openImage(this)">
 
 </div>
 
@@ -92,49 +89,71 @@ data-en="I am an artist from Ukraine. I work with oil paints, acrylic, graphite 
 <img src="Images/images/other/IMG_20251202_184650.jpg" onclick="openImage(this)">
 <img src="Images/images/other/IMG_20251021_200809.jpg" onclick="openImage(this)">
 <img src="Images/images/other/IMG_20251019_150350.jpg" onclick="openImage(this)">
-<img src="Images/images/other/Screenshot_2025-10-16-20-58-52-314_com.instagram.android-edit.jpg" onclick="openImage(this)">
-<img src="Images/images/other/IMG_20251008_205639_156.webp" onclick="openImage(this)">
 <img src="Images/images/other/IMG_20250914_173957.jpg" onclick="openImage(this)">
-<img src="Images/images/other/IMG_20250828_173659.jpg" onclick="openImage(this)">
-<img src="Images/images/other/IMG_20250827_162438.jpg" onclick="openImage(this)">
 
 </div>
 
 </section>
 
 
-<section class="contact">
+<section class="prices">
 
-<h2 data-ua="Замовити малюнок" data-en="Commission Artwork">
-Замовити малюнок
+<h2 data-ua="Орієнтовні ціни" data-en="Estimated Prices">
+Орієнтовні ціни
 </h2>
 
-<a class="btn"
-href="mailto:nychyporukbohdan@gmail.com?subject=Art%20Commission">
+<ul>
 
-<span data-ua="Замовити роботу" data-en="Order Artwork">
-Замовити роботу
-</span>
+<li data-ua="Малюнок графітним олівцем A4 — $70-120"
+data-en="Graphite drawing A4 — $70-120">
+Малюнок графітним олівцем A4 — $70-120
+</li>
 
-</a>
+<li data-ua="Портрет олівцем — $70-120"
+data-en="Pencil portrait — $70-120">
+Портрет олівцем — $70-120
+</li>
 
-<a class="btn"
-href="mailto:nychyporukbohdan@gmail.com">
+<li data-ua="Олійний живопис до 50×70 см — $150-300"
+data-en="Oil painting up to 50×70 cm — $150-300">
+Олійний живопис до 50×70 см — $150-300
+</li>
 
-<span data-ua="Написати мені" data-en="Contact Me">
-Написати мені
-</span>
+<li data-ua="Картини більші за 50×70 см — ціна договірна"
+data-en="Paintings larger than 50×70 cm — price on request">
+Картини більші за 50×70 см — ціна договірна
+</li>
 
-</a>
+</ul>
 
 </section>
 
 
-<section class="social">
+<section class="reviews">
 
-<h2 data-ua="Соціальні мережі" data-en="Social Media">
-Соціальні мережі
+<h2 data-ua="Відгуки" data-en="Reviews">
+Відгуки
 </h2>
+
+<p data-ua="Якщо вам сподобалася моя робота — ви можете залишити відгук через Instagram або email."
+data-en="If you enjoyed my artwork you can leave a review via Instagram or email.">
+
+Якщо вам сподобалася моя робота — залиште відгук.
+
+</p>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2 data-ua="Контакти" data-en="Contact">
+Контакти
+</h2>
+
+<a class="btn" href="mailto:nychyporukbohdan@gmail.com">
+Email
+</a>
 
 <a class="social-btn" href="https://www.instagram.com/nych_bo" target="_blank">
 Instagram
@@ -153,18 +172,12 @@ Facebook
 
 <div id="viewer">
 
-<span class="close" onclick="closeImage()">✕</span>
+<span onclick="closeImage()" class="close">✕</span>
 
 <img id="viewer-img">
 
-<div class="nav">
-
-<button onclick="prevImage()">❮</button>
-<button onclick="nextImage()">❯</button>
-
 </div>
 
-</div>
 
 <footer>
 
@@ -175,4 +188,3 @@ Facebook
 <script src="script.js"></script>
 
 </body>
-</html>
